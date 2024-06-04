@@ -110,7 +110,7 @@ class SoundsView: UIView {
 
     private lazy var rainLabel: UILabel = {
         let label = UILabel()
-        label.text = "15 min"
+        label.text = "10 min"
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -192,7 +192,7 @@ class SoundsView: UIView {
 
     private lazy var birdsLabel: UILabel = {
         let label = UILabel()
-        label.text = "20 min"
+        label.text = "10 min"
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false

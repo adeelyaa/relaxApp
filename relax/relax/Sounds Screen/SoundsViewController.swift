@@ -13,21 +13,28 @@ class SoundsViewController: UIViewController, SoundsViewDelegate {
     }
 
     func beachButtonTapped() {
-        let vc = SoundPlayerViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        showSoundPlayer(image: UIImage(named: "beach"), soundFileName: "beach", soundName: "Beach")
     }
 
     func rainButtonTapped() {
-        // TODO: show sound player
+        showSoundPlayer(image: UIImage(named: "rain"), soundFileName: "rain", soundName: "Rain")
     }
 
     func pianoButtonTapped() {
-        // TODO: show sound player
+        showSoundPlayer(image: UIImage(named: "piano"), soundFileName: "piaano", soundName: "Piano")
     }
 
     func birdsButtonTapped() {
-        // TODO: show sound player
+        showSoundPlayer(image: UIImage(named: "birds"), soundFileName: "birds", soundName: "Birds")
+    }
+
+    private func showSoundPlayer(image: UIImage?, soundFileName: String, soundName: String) {
+        let vc = SoundPlayerViewController()
+        vc.selectedImage = image
+        vc.soundFileName = soundFileName
+        vc.soundName = soundName
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 
 }

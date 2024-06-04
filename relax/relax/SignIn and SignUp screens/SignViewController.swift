@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseAuth
+import CoreData
 
 class SignViewController: UIViewController, SignViewDelegate {
 
@@ -45,9 +46,24 @@ class SignViewController: UIViewController, SignViewDelegate {
                 if error != nil {
                     self.showAlert(message: "Неправильный email или пароль")
                 } else {
+                    self.loadCurrentUser(email: email)
                     self.showTabBar()
                 }
             }
+        }
+    }
+
+    func loadCurrentUser(email: String) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<AppUser> = AppUser.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "email == %@", email)
+        do {
+            let users = try context.fetch(fetchRequest)
+            if let currentUser = users.first {
+                UserDefaults.standard.set(currentUser.objectID.uriRepresentation().absoluteString, forKey: "currentUser")
+            }
+        } catch {
+            print("Failed to fetch user: \(error)")
         }
     }
 
@@ -62,6 +78,7 @@ class SignViewController: UIViewController, SignViewDelegate {
                     let changeRequest = result.user.createProfileChangeRequest()
                     changeRequest.displayName = name
                     changeRequest.commitChanges { _ in
+                        self.saveUserToCoreData(email: email, name: name)
                         self.showTabBar()
                     }
                 }
@@ -72,13 +89,27 @@ class SignViewController: UIViewController, SignViewDelegate {
     func signInOptionButtonTapped() {
         let vc = SignViewController(screenType: .signUp)
         vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
         present(vc, animated: true, completion: nil)
     }
 
     func signUpOptionButtonTapped() {
         let vc = SignViewController(screenType: .signIn)
         vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
         present(vc, animated: true, completion: nil)
+    }
+
+    func saveUserToCoreData(email: String, name: String) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newUser = AppUser(context: context)
+        newUser.name = name
+        newUser.email = email
+        do {
+            try context.save()
+        } catch {
+            print("Failed to save user: \(error)")
+        }
     }
 
     func showAlert(message: String) {
@@ -102,6 +133,14 @@ class SignViewController: UIViewController, SignViewDelegate {
         tabBarController.tabBar.unselectedItemTintColor = .white
 
         tabBarController.viewControllers = [breathViewController, profileViewController, soundsViewController]
+
+        if let currentUserURI = UserDefaults.standard.string(forKey: "currentUser") {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            if let currentUserID = context.persistentStoreCoordinator?.managedObjectID(forURIRepresentation: URL(string: currentUserURI)!) {
+                let currentUser = context.object(with: currentUserID) as? AppUser
+                profileViewController.currentUser = currentUser
+            }
+        }
 
         if let window = view.window {
             window.rootViewController = tabBarController

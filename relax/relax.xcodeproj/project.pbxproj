@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0D84052BF23F550021212F /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD0D84042BF23F550021212F /* rain.mp3 */; };
+		DD0D84092BF2440A0021212F /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD0D84082BF2440A0021212F /* birds.mp3 */; };
+		DD0D840B2BF25E840021212F /* Bellota-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0D840A2BF25E840021212F /* Bellota-Regular.ttf */; };
+		DD0D840D2BFC88E10021212F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D840C2BFC88E10021212F /* SettingsViewController.swift */; };
+		DD0D840F2BFC88F30021212F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D840E2BFC88F30021212F /* SettingsView.swift */; };
+		DD0D84142BFC8F260021212F /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D84132BFC8F260021212F /* MoodViewController.swift */; };
+		DD0D84172BFCA6630021212F /* MoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D84162BFCA6630021212F /* MoodCollectionViewCell.swift */; };
+		DD0D84192BFCFA0F0021212F /* ABeeZee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0D84182BFCFA0F0021212F /* ABeeZee-Regular.ttf */; };
+		DD0D841D2BFE68790021212F /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D841C2BFE68790021212F /* MoodTableViewCell.swift */; };
+		DD0D841F2BFE78D70021212F /* BreathPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D841E2BFE78D70021212F /* BreathPracticeView.swift */; };
+		DD0D84212BFE78E50021212F /* BreathPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D84202BFE78E50021212F /* BreathPracticeViewController.swift */; };
+		DD0D84242C00B6200021212F /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D84232C00B6200021212F /* UITextViewExtension.swift */; };
+		DD0D84302C09D2AD0021212F /* DetailMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D842F2C09D2AD0021212F /* DetailMoodViewController.swift */; };
+		DD0D84322C09D2BC0021212F /* DetailMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D84312C09D2BC0021212F /* DetailMoodView.swift */; };
+		DD0D84352C0AF37C0021212F /* piaano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD0D84342C0AF37C0021212F /* piaano.mp3 */; };
 		DDA967C62BB2E8A20024C983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA967C52BB2E8A20024C983 /* AppDelegate.swift */; };
 		DDA967C82BB2E8A20024C983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA967C72BB2E8A20024C983 /* SceneDelegate.swift */; };
 		DDA967D02BB2E8A20024C983 /* relax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDA967CE2BB2E8A20024C983 /* relax.xcdatamodeld */; };
@@ -32,9 +47,25 @@
 		DDEA9A6A2BE012E70002F8AB /* SoundPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA9A692BE012E70002F8AB /* SoundPlayerViewController.swift */; };
 		DDEA9A722BE404E20002F8AB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DDEA9A712BE404E20002F8AB /* FirebaseAuth */; };
 		DDEA9A742BE4057A0002F8AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDEA9A732BE4057A0002F8AB /* GoogleService-Info.plist */; };
+		DDEA9A772BE81B5A0002F8AB /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEA9A762BE81B5A0002F8AB /* beach.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD0D84042BF23F550021212F /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		DD0D84082BF2440A0021212F /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds.mp3; sourceTree = "<group>"; };
+		DD0D840A2BF25E840021212F /* Bellota-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bellota-Regular.ttf"; sourceTree = "<group>"; };
+		DD0D840C2BFC88E10021212F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DD0D840E2BFC88F30021212F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DD0D84132BFC8F260021212F /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		DD0D84162BFCA6630021212F /* MoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD0D84182BFCFA0F0021212F /* ABeeZee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABeeZee-Regular.ttf"; sourceTree = "<group>"; };
+		DD0D841C2BFE68790021212F /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		DD0D841E2BFE78D70021212F /* BreathPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPracticeView.swift; sourceTree = "<group>"; };
+		DD0D84202BFE78E50021212F /* BreathPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPracticeViewController.swift; sourceTree = "<group>"; };
+		DD0D84232C00B6200021212F /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		DD0D842F2C09D2AD0021212F /* DetailMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoodViewController.swift; sourceTree = "<group>"; };
+		DD0D84312C09D2BC0021212F /* DetailMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoodView.swift; sourceTree = "<group>"; };
+		DD0D84342C0AF37C0021212F /* piaano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piaano.mp3; sourceTree = "<group>"; };
 		DDA967C22BB2E8A20024C983 /* relax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = relax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA967C52BB2E8A20024C983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA967C72BB2E8A20024C983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +92,7 @@
 		DDEA9A672BE012D90002F8AB /* SoundPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerView.swift; sourceTree = "<group>"; };
 		DDEA9A692BE012E70002F8AB /* SoundPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerViewController.swift; sourceTree = "<group>"; };
 		DDEA9A732BE4057A0002F8AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDEA9A762BE81B5A0002F8AB /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +107,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0D84102BFC88FC0021212F /* Settings Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D840C2BFC88E10021212F /* SettingsViewController.swift */,
+				DD0D840E2BFC88F30021212F /* SettingsView.swift */,
+			);
+			path = "Settings Screen";
+			sourceTree = "<group>";
+		};
+		DD0D84152BFC8F2C0021212F /* Mood Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D84132BFC8F260021212F /* MoodViewController.swift */,
+				DD0D84162BFCA6630021212F /* MoodCollectionViewCell.swift */,
+			);
+			path = "Mood Screen";
+			sourceTree = "<group>";
+		};
+		DD0D84222BFE78EA0021212F /* Breath Practice Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D841E2BFE78D70021212F /* BreathPracticeView.swift */,
+				DD0D84202BFE78E50021212F /* BreathPracticeViewController.swift */,
+			);
+			path = "Breath Practice Screen";
+			sourceTree = "<group>";
+		};
+		DD0D84332C09D2C10021212F /* Detail Mood Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D842F2C09D2AD0021212F /* DetailMoodViewController.swift */,
+				DD0D84312C09D2BC0021212F /* DetailMoodView.swift */,
+			);
+			path = "Detail Mood Screen";
+			sourceTree = "<group>";
+		};
 		DDA967B92BB2E8A20024C983 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +165,16 @@
 				DDA967C52BB2E8A20024C983 /* AppDelegate.swift */,
 				DDA967C72BB2E8A20024C983 /* SceneDelegate.swift */,
 				DDA967D12BB2E8A30024C983 /* Assets.xcassets */,
+				DDEA9A752BE81B5A0002F8AB /* sounds */,
 				DDA967D32BB2E8A30024C983 /* LaunchScreen.storyboard */,
 				DDA967D62BB2E8A30024C983 /* Info.plist */,
 				DDEA9A732BE4057A0002F8AB /* GoogleService-Info.plist */,
 				DDA967EF2BB7F8D60024C983 /* Amiko-Regular.ttf */,
+				DD0D84182BFCFA0F0021212F /* ABeeZee-Regular.ttf */,
 				DDA967EA2BB568060024C983 /* AbhayaLibre-Regular.ttf */,
 				DDA967E82BB566440024C983 /* Kavivanar-Regular.ttf */,
 				DDEA9A612BDBC2F60002F8AB /* Alice-Regular.ttf */,
+				DD0D840A2BF25E840021212F /* Bellota-Regular.ttf */,
 				DDA967CE2BB2E8A20024C983 /* relax.xcdatamodeld */,
 				DDA967E22BB403600024C983 /* Start Screen */,
 				DDA967EE2BB577240024C983 /* Extensions */,
@@ -112,6 +183,10 @@
 				DDEA9A592BDA302E0002F8AB /* Sounds Screen */,
 				DDEA9A5E2BDA305C0002F8AB /* Breath Screen */,
 				DDEA9A6B2BE012ED0002F8AB /* Sound Player Screen */,
+				DD0D84102BFC88FC0021212F /* Settings Screen */,
+				DD0D84152BFC8F2C0021212F /* Mood Screen */,
+				DD0D84222BFE78EA0021212F /* Breath Practice Screen */,
+				DD0D84332C09D2C10021212F /* Detail Mood Screen */,
 			);
 			path = relax;
 			sourceTree = "<group>";
@@ -130,6 +205,7 @@
 			children = (
 				DDA967EC2BB573F60024C983 /* UILabelExtension.swift */,
 				DDA967FF2BBE86C80024C983 /* UITextFieldExtension.swift */,
+				DD0D84232C00B6200021212F /* UITextViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +224,7 @@
 			children = (
 				DDEA9A502BDA2E590002F8AB /* ProfileViewController.swift */,
 				DDEA9A522BDA2E6B0002F8AB /* ProfileView.swift */,
+				DD0D841C2BFE68790021212F /* MoodTableViewCell.swift */,
 			);
 			path = "Profile Screen";
 			sourceTree = "<group>";
@@ -177,6 +254,17 @@
 				DDEA9A692BE012E70002F8AB /* SoundPlayerViewController.swift */,
 			);
 			path = "Sound Player Screen";
+			sourceTree = "<group>";
+		};
+		DDEA9A752BE81B5A0002F8AB /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA9A762BE81B5A0002F8AB /* beach.mp3 */,
+				DD0D84042BF23F550021212F /* rain.mp3 */,
+				DD0D84342C0AF37C0021212F /* piaano.mp3 */,
+				DD0D84082BF2440A0021212F /* birds.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +298,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					DDA967C12BB2E8A20024C983 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -243,11 +331,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0D84092BF2440A0021212F /* birds.mp3 in Resources */,
 				DDA967F02BB7F8D70024C983 /* Amiko-Regular.ttf in Resources */,
+				DD0D84352C0AF37C0021212F /* piaano.mp3 in Resources */,
+				DD0D84192BFCFA0F0021212F /* ABeeZee-Regular.ttf in Resources */,
 				DDA967E92BB566440024C983 /* Kavivanar-Regular.ttf in Resources */,
+				DD0D84052BF23F550021212F /* rain.mp3 in Resources */,
+				DDEA9A772BE81B5A0002F8AB /* beach.mp3 in Resources */,
 				DDEA9A622BDBC2F60002F8AB /* Alice-Regular.ttf in Resources */,
 				DDEA9A742BE4057A0002F8AB /* GoogleService-Info.plist in Resources */,
 				DDA967D52BB2E8A30024C983 /* LaunchScreen.storyboard in Resources */,
+				DD0D840B2BF25E840021212F /* Bellota-Regular.ttf in Resources */,
 				DDA967EB2BB568060024C983 /* AbhayaLibre-Regular.ttf in Resources */,
 				DDA967D22BB2E8A30024C983 /* Assets.xcassets in Resources */,
 			);
@@ -261,22 +355,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA967DF2BB403370024C983 /* StartView.swift in Sources */,
+				DD0D84212BFE78E50021212F /* BreathPracticeViewController.swift in Sources */,
 				DDEA9A6A2BE012E70002F8AB /* SoundPlayerViewController.swift in Sources */,
 				DDEA9A682BE012D90002F8AB /* SoundPlayerView.swift in Sources */,
+				DD0D84172BFCA6630021212F /* MoodCollectionViewCell.swift in Sources */,
 				DDA967C62BB2E8A20024C983 /* AppDelegate.swift in Sources */,
 				DDEA9A512BDA2E590002F8AB /* ProfileViewController.swift in Sources */,
 				DDA967D02BB2E8A20024C983 /* relax.xcdatamodeld in Sources */,
 				DDA967FE2BBD46FC0024C983 /* SignViewController.swift in Sources */,
 				DDEA9A582BDA30260002F8AB /* SoundsViewController.swift in Sources */,
 				DDA968002BBE86C80024C983 /* UITextFieldExtension.swift in Sources */,
+				DD0D84322C09D2BC0021212F /* DetailMoodView.swift in Sources */,
+				DD0D841D2BFE68790021212F /* MoodTableViewCell.swift in Sources */,
+				DD0D84302C09D2AD0021212F /* DetailMoodViewController.swift in Sources */,
 				DDA967ED2BB573F60024C983 /* UILabelExtension.swift in Sources */,
 				DDA967C82BB2E8A20024C983 /* SceneDelegate.swift in Sources */,
+				DD0D84242C00B6200021212F /* UITextViewExtension.swift in Sources */,
 				DDA967FC2BBD44E70024C983 /* SignView.swift in Sources */,
+				DD0D841F2BFE78D70021212F /* BreathPracticeView.swift in Sources */,
 				DDEA9A532BDA2E6B0002F8AB /* ProfileView.swift in Sources */,
 				DDEA9A562BDA30160002F8AB /* SoundsView.swift in Sources */,
 				DDEA9A5B2BDA30480002F8AB /* BreathViewController.swift in Sources */,
 				DDEA9A5D2BDA30580002F8AB /* BreathView.swift in Sources */,
 				DDA967E12BB403550024C983 /* StartViewController.swift in Sources */,
+				DD0D84142BFC8F260021212F /* MoodViewController.swift in Sources */,
+				DD0D840D2BFC88E10021212F /* SettingsViewController.swift in Sources */,
+				DD0D840F2BFC88F30021212F /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +434,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -390,6 +495,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
